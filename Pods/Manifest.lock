@@ -1,0 +1,16 @@
+PODS:
+  - CryptoNewsApi (1.1.1)
+
+DEPENDENCIES:
+  - CryptoNewsApi
+
+SPEC REPOS:
+  trunk:
+    - CryptoNewsApi
+
+SPEC CHECKSUMS:
+  CryptoNewsApi: 910c468a07fdcfdedac9423352add1b935a29e87
+
+PODFILE CHECKSUM: 7b972e45ca7e595c9e6a988ad6cce5796a394e75
+
+COCOAPODS: 1.8.0

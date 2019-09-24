@@ -8,33 +8,53 @@
 
 import UIKit
 
-class SimulatorViewController: UIViewController {
-
-    @IBOutlet var regressivaView: UIView!
-    @IBOutlet var progressivaView: UIView!
-    @IBOutlet var segmentedControl: UISegmentedControl!
+class SimulatorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Simulador"
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func SimulationTypeSwitch(_ sender: UISegmentedControl) {
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            regressivaView.isHidden = false
-            progressivaView.isHidden = true
-        case 1:
-            regressivaView.isHidden = true
-            progressivaView.isHidden = false
-        default:
-            break
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 64
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = "BTC"
+        
+        cell.textLabel?.textColor = .actionColor
+        
+        cell.detailTextLabel?.text = "Rendeu R$ 300,00 até 20/10/2018"
+        cell.detailTextLabel?.textColor = .actionColor
+        
+        cell.backgroundColor = .primaryColor
+        
+        let image = UIImage(named: "currency-exchange")
+        
+        if let imageView = cell.imageView {
+            imageView.image = image
+        }
+        
+        return cell
+    }
+   
+    
     /*
     // MARK: - Navigation
 

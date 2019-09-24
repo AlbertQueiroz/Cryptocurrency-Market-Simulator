@@ -1,0 +1,6 @@
+framework module Pods_ProjectX_ProjectXUITests {
+  umbrella header "Pods-ProjectX-ProjectXUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

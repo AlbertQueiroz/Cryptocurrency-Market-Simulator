@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B7399F6735EBB118B218D380B6A48CB /* CryptoControlApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E23BA1585FF8A9C033C316CBC98817F /* CryptoControlApi.swift */; };
+		511C12AFFE8FC2071BDD7902950A4B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5DB1DD8C200F8692ED66B469A8934B14 /* Pods-ProjectXTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6470ADDCB0ECE4DC91A6D49756ED3479 /* Pods-ProjectXTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8155AF85D25E946F75F336D724CAC4B8 /* CryptoNewsApi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7E355543DECA8907C2CA671DBA5D90 /* CryptoNewsApi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FE88D80875ADAA503D7BF65C38061F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AC5C9BB93257832BFA7463A8081A3CC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AFF1FEFE17DF0669976A755982098207 /* Pods-ProjectXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E18EE34E769358F6189E47E6A2CA534 /* Pods-ProjectXTests-dummy.m */; };
+		C517A9409F486D74C8D258B8351A6705 /* Pods-ProjectX-ProjectXUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 311C6CF2F0C51C0D0F78F125E820A6F2 /* Pods-ProjectX-ProjectXUITests-dummy.m */; };
+		CCE858946FD30D22065B2AA4E0AF1ECC /* Pods-ProjectX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13AA4E28F03A519B84AB00E2838C86 /* Pods-ProjectX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE78A55D21C994B6F61DE22D2C554CE2 /* CCModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611D63C83A0BC2D502A35108631D124 /* CCModels.swift */; };
+		D153C2E80A04410D5BAC3C7E48069CBF /* CryptoNewsApi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1152E601ED334976B0084695DB249 /* CryptoNewsApi-dummy.m */; };
+		EAB9045D91887EB43CA784F76E05C9F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F7305D1F631E2C24962AF43677B850BE /* Pods-ProjectX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C53D38D9057107782C3AD97155BA /* Pods-ProjectX-dummy.m */; };
+		FAB497122DC1D9D7482BD79EE83EA308 /* Pods-ProjectX-ProjectXUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 933E3F1185220807CF46DB845D4B44EB /* Pods-ProjectX-ProjectXUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CE1B28D5DAD7BAE7FFE2EB6255B6AFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F54D367B6A114347B83E1577FC96D21;
+			remoteInfo = CryptoNewsApi;
+		};
+		82417F5838FE04657B1266339D2597BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F54D367B6A114347B83E1577FC96D21;
+			remoteInfo = CryptoNewsApi;
+		};
+		F94FD54B069DB3C3D444E49F780FFB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B2205D036BD597D3AF159F7A74757CA;
+			remoteInfo = "Pods-ProjectX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0576BCA538A7C5EB37724AAB777BF3E8 /* Pods-ProjectX-ProjectXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProjectX-ProjectXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0611D63C83A0BC2D502A35108631D124 /* CCModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCModels.swift; path = CryptoNewsApi/Classes/CCModels.swift; sourceTree = "<group>"; };
+		072B2CB0A609042BB1F9D1C338C9CFFD /* Pods-ProjectXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProjectXTests.release.xcconfig"; sourceTree = "<group>"; };
+		1DCEC377A7052D7D5ABEBD8F45728E47 /* CryptoNewsApi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CryptoNewsApi-Info.plist"; sourceTree = "<group>"; };
+		1E10C53D38D9057107782C3AD97155BA /* Pods-ProjectX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProjectX-dummy.m"; sourceTree = "<group>"; };
+		2A62038A2D12788FC95BA64E4FC28794 /* Pods-ProjectX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProjectX-acknowledgements.markdown"; sourceTree = "<group>"; };
+		311C6CF2F0C51C0D0F78F125E820A6F2 /* Pods-ProjectX-ProjectXUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProjectX-ProjectXUITests-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36A37ECD67EA543C0EC6BE016FC77576 /* Pods-ProjectXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProjectXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42C841721D936D95038E6AAF1B935E6A /* Pods-ProjectXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProjectXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A407E86E8A7CF69318069D462896509 /* Pods-ProjectX-ProjectXUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProjectX-ProjectXUITests.modulemap"; sourceTree = "<group>"; };
+		4DF686E6C6F8B1BC2355D8A530B16FF0 /* Pods_ProjectXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548D9037EEDD729EB56300C7D482C30A /* Pods-ProjectX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProjectX.release.xcconfig"; sourceTree = "<group>"; };
+		56C9AF04B3BB2489CF7620BFAC465ACE /* Pods-ProjectX-ProjectXUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProjectX-ProjectXUITests-Info.plist"; sourceTree = "<group>"; };
+		642A2C44C93B881BB0BCB042957AE19C /* Pods_ProjectX_ProjectXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectX_ProjectXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6470ADDCB0ECE4DC91A6D49756ED3479 /* Pods-ProjectXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProjectXTests-umbrella.h"; sourceTree = "<group>"; };
+		6D4A8CFEB10DBFFB91CA86CC62E1EE5C /* Pods-ProjectXTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProjectXTests-Info.plist"; sourceTree = "<group>"; };
+		6E23BA1585FF8A9C033C316CBC98817F /* CryptoControlApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoControlApi.swift; path = CryptoNewsApi/Classes/CryptoControlApi.swift; sourceTree = "<group>"; };
+		71B104C4AE479725CE2342B2FD7503A6 /* CryptoNewsApi-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoNewsApi-prefix.pch"; sourceTree = "<group>"; };
+		742422E9CDAA548158A475C88FEB9B9A /* Pods-ProjectX-ProjectXUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProjectX-ProjectXUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C61F57D07F85A641D79588BEC4585C9 /* Pods-ProjectXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProjectXTests.modulemap"; sourceTree = "<group>"; };
+		8785F541BF23CF881283DFC7A2ACC629 /* Pods_ProjectX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7E355543DECA8907C2CA671DBA5D90 /* CryptoNewsApi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoNewsApi-umbrella.h"; sourceTree = "<group>"; };
+		900D6F03ACF18C7402ADEFF6EB55D6C3 /* Pods-ProjectX-ProjectXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProjectX-ProjectXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		933E3F1185220807CF46DB845D4B44EB /* Pods-ProjectX-ProjectXUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProjectX-ProjectXUITests-umbrella.h"; sourceTree = "<group>"; };
+		952BF0B069E9E310769FEC4A12F71318 /* Pods-ProjectX-ProjectXUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProjectX-ProjectXUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E18EE34E769358F6189E47E6A2CA534 /* Pods-ProjectXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProjectXTests-dummy.m"; sourceTree = "<group>"; };
+		9EB0032876EF95AFF9CA308CDD457450 /* CryptoNewsApi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoNewsApi.modulemap; sourceTree = "<group>"; };
+		B5BA7944A243E6D0EF869AE5CB824D61 /* Pods-ProjectX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProjectX-Info.plist"; sourceTree = "<group>"; };
+		BBA3B7986C9163CBD798561FC064C02C /* CryptoNewsApi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoNewsApi.xcconfig; sourceTree = "<group>"; };
+		BF13AA4E28F03A519B84AB00E2838C86 /* Pods-ProjectX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProjectX-umbrella.h"; sourceTree = "<group>"; };
+		CA9BFC660319FD4C42559E6576066A81 /* Pods-ProjectX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProjectX.debug.xcconfig"; sourceTree = "<group>"; };
+		D30C2B625DAE6216FCA875433F212F93 /* Pods-ProjectXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProjectXTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D41E45F706D3DDBF310F8B29B6518FEF /* Pods-ProjectX-ProjectXUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProjectX-ProjectXUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DAB1152E601ED334976B0084695DB249 /* CryptoNewsApi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoNewsApi-dummy.m"; sourceTree = "<group>"; };
+		DB0B954F1B5D6D22EA0107E3309040EE /* Pods-ProjectX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProjectX-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4373DBB682CB4D641BE77D09AC1AF95 /* Pods-ProjectX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProjectX.modulemap"; sourceTree = "<group>"; };
+		EB2236107E4D2DF42FD9E023FB21A0BF /* Pods-ProjectX-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProjectX-frameworks.sh"; sourceTree = "<group>"; };
+		FA7DF7A6DF9AB7474653485F184F7B9E /* CryptoNewsApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoNewsApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADA75CE22171561029D605E0C077234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE88D80875ADAA503D7BF65C38061F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28A31D0277835745580A3BCA5079777B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB9045D91887EB43CA784F76E05C9F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		339F0767559CC9FE0544799FE4D3C95A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5C9BB93257832BFA7463A8081A3CC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60947939F2B66E70FCDFC38AF39F7607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511C12AFFE8FC2071BDD7902950A4B6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0779635C04206109DE626754AA5E1A /* CryptoNewsApi */ = {
+			isa = PBXGroup;
+			children = (
+				0611D63C83A0BC2D502A35108631D124 /* CCModels.swift */,
+				6E23BA1585FF8A9C033C316CBC98817F /* CryptoControlApi.swift */,
+				858AF442DCB5EEE62219516237C76833 /* Support Files */,
+			);
+			path = CryptoNewsApi;
+			sourceTree = "<group>";
+		};
+		32482BE7B8970A6ABDBFAE9FC3607A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DF7A6DF9AB7474653485F184F7B9E /* CryptoNewsApi.framework */,
+				8785F541BF23CF881283DFC7A2ACC629 /* Pods_ProjectX.framework */,
+				642A2C44C93B881BB0BCB042957AE19C /* Pods_ProjectX_ProjectXUITests.framework */,
+				4DF686E6C6F8B1BC2355D8A530B16FF0 /* Pods_ProjectXTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463F2037B58B77C33766F56A7985B6CE /* Pods-ProjectXTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C61F57D07F85A641D79588BEC4585C9 /* Pods-ProjectXTests.modulemap */,
+				42C841721D936D95038E6AAF1B935E6A /* Pods-ProjectXTests-acknowledgements.markdown */,
+				D30C2B625DAE6216FCA875433F212F93 /* Pods-ProjectXTests-acknowledgements.plist */,
+				9E18EE34E769358F6189E47E6A2CA534 /* Pods-ProjectXTests-dummy.m */,
+				6D4A8CFEB10DBFFB91CA86CC62E1EE5C /* Pods-ProjectXTests-Info.plist */,
+				6470ADDCB0ECE4DC91A6D49756ED3479 /* Pods-ProjectXTests-umbrella.h */,
+				36A37ECD67EA543C0EC6BE016FC77576 /* Pods-ProjectXTests.debug.xcconfig */,
+				072B2CB0A609042BB1F9D1C338C9CFFD /* Pods-ProjectXTests.release.xcconfig */,
+			);
+			name = "Pods-ProjectXTests";
+			path = "Target Support Files/Pods-ProjectXTests";
+			sourceTree = "<group>";
+		};
+		858AF442DCB5EEE62219516237C76833 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB0032876EF95AFF9CA308CDD457450 /* CryptoNewsApi.modulemap */,
+				BBA3B7986C9163CBD798561FC064C02C /* CryptoNewsApi.xcconfig */,
+				DAB1152E601ED334976B0084695DB249 /* CryptoNewsApi-dummy.m */,
+				1DCEC377A7052D7D5ABEBD8F45728E47 /* CryptoNewsApi-Info.plist */,
+				71B104C4AE479725CE2342B2FD7503A6 /* CryptoNewsApi-prefix.pch */,
+				8E7E355543DECA8907C2CA671DBA5D90 /* CryptoNewsApi-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CryptoNewsApi";
+			sourceTree = "<group>";
+		};
+		A91650B9930DDD16782D431A306396B7 /* Pods-ProjectX */ = {
+			isa = PBXGroup;
+			children = (
+				E4373DBB682CB4D641BE77D09AC1AF95 /* Pods-ProjectX.modulemap */,
+				2A62038A2D12788FC95BA64E4FC28794 /* Pods-ProjectX-acknowledgements.markdown */,
+				DB0B954F1B5D6D22EA0107E3309040EE /* Pods-ProjectX-acknowledgements.plist */,
+				1E10C53D38D9057107782C3AD97155BA /* Pods-ProjectX-dummy.m */,
+				EB2236107E4D2DF42FD9E023FB21A0BF /* Pods-ProjectX-frameworks.sh */,
+				B5BA7944A243E6D0EF869AE5CB824D61 /* Pods-ProjectX-Info.plist */,
+				BF13AA4E28F03A519B84AB00E2838C86 /* Pods-ProjectX-umbrella.h */,
+				CA9BFC660319FD4C42559E6576066A81 /* Pods-ProjectX.debug.xcconfig */,
+				548D9037EEDD729EB56300C7D482C30A /* Pods-ProjectX.release.xcconfig */,
+			);
+			name = "Pods-ProjectX";
+			path = "Target Support Files/Pods-ProjectX";
+			sourceTree = "<group>";
+		};
+		B609B933CD3165D01CEABD1D9CD7F5D1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A91650B9930DDD16782D431A306396B7 /* Pods-ProjectX */,
+				FD9A27FE3E49B5E605262487F9A7AC8D /* Pods-ProjectX-ProjectXUITests */,
+				463F2037B58B77C33766F56A7985B6CE /* Pods-ProjectXTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E72873D419D6A0241D50DE9C9F1D0510 /* Pods */,
+				32482BE7B8970A6ABDBFAE9FC3607A0B /* Products */,
+				B609B933CD3165D01CEABD1D9CD7F5D1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72873D419D6A0241D50DE9C9F1D0510 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F0779635C04206109DE626754AA5E1A /* CryptoNewsApi */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD9A27FE3E49B5E605262487F9A7AC8D /* Pods-ProjectX-ProjectXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A407E86E8A7CF69318069D462896509 /* Pods-ProjectX-ProjectXUITests.modulemap */,
+				742422E9CDAA548158A475C88FEB9B9A /* Pods-ProjectX-ProjectXUITests-acknowledgements.markdown */,
+				952BF0B069E9E310769FEC4A12F71318 /* Pods-ProjectX-ProjectXUITests-acknowledgements.plist */,
+				311C6CF2F0C51C0D0F78F125E820A6F2 /* Pods-ProjectX-ProjectXUITests-dummy.m */,
+				D41E45F706D3DDBF310F8B29B6518FEF /* Pods-ProjectX-ProjectXUITests-frameworks.sh */,
+				56C9AF04B3BB2489CF7620BFAC465ACE /* Pods-ProjectX-ProjectXUITests-Info.plist */,
+				933E3F1185220807CF46DB845D4B44EB /* Pods-ProjectX-ProjectXUITests-umbrella.h */,
+				0576BCA538A7C5EB37724AAB777BF3E8 /* Pods-ProjectX-ProjectXUITests.debug.xcconfig */,
+				900D6F03ACF18C7402ADEFF6EB55D6C3 /* Pods-ProjectX-ProjectXUITests.release.xcconfig */,
+			);
+			name = "Pods-ProjectX-ProjectXUITests";
+			path = "Target Support Files/Pods-ProjectX-ProjectXUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A666AF37AE666FFBF09FB37F02625E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE858946FD30D22065B2AA4E0AF1ECC /* Pods-ProjectX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149415A540E5C6BA06F736469FF4FFF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8155AF85D25E946F75F336D724CAC4B8 /* CryptoNewsApi-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADF7816970BD508581EEE818EE59077 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB497122DC1D9D7482BD79EE83EA308 /* Pods-ProjectX-ProjectXUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA1E82D3C85BA37AC3395A949233D51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB1DD8C200F8692ED66B469A8934B14 /* Pods-ProjectXTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05F83A67A91133CC878814C0AB781F05 /* Pods-ProjectX-ProjectXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE95AA90F777E1F68603D4641617A1C /* Build configuration list for PBXNativeTarget "Pods-ProjectX-ProjectXUITests" */;
+			buildPhases = (
+				4ADF7816970BD508581EEE818EE59077 /* Headers */,
+				1328CDBAE3E7A63A5B7937E681E6A503 /* Sources */,
+				60947939F2B66E70FCDFC38AF39F7607 /* Frameworks */,
+				C3EBB6905A29230ED57A34DA8F808F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C3B829AF19EB36A888648AC79411AF1 /* PBXTargetDependency */,
+			);
+			name = "Pods-ProjectX-ProjectXUITests";
+			productName = "Pods-ProjectX-ProjectXUITests";
+			productReference = 642A2C44C93B881BB0BCB042957AE19C /* Pods_ProjectX_ProjectXUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F54D367B6A114347B83E1577FC96D21 /* CryptoNewsApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B593916E5ABF57413C64EACD2A839EC1 /* Build configuration list for PBXNativeTarget "CryptoNewsApi" */;
+			buildPhases = (
+				149415A540E5C6BA06F736469FF4FFF3 /* Headers */,
+				B52B34DA20E6D0935FC3DE635F5FF685 /* Sources */,
+				28A31D0277835745580A3BCA5079777B /* Frameworks */,
+				D2BDBB61A59E9C1ADD9B0FA73A032E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoNewsApi;
+			productName = CryptoNewsApi;
+			productReference = FA7DF7A6DF9AB7474653485F184F7B9E /* CryptoNewsApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B2205D036BD597D3AF159F7A74757CA /* Pods-ProjectX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C486C38E16F91903DFA58670F6377C12 /* Build configuration list for PBXNativeTarget "Pods-ProjectX" */;
+			buildPhases = (
+				0A666AF37AE666FFBF09FB37F02625E6 /* Headers */,
+				00432A5F7C3E71F06CE03430E67D92EE /* Sources */,
+				1ADA75CE22171561029D605E0C077234 /* Frameworks */,
+				73FE923020ECA74DA4B3E6D5A01DD69A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE080FBC648EA2A8B868664A168FDF30 /* PBXTargetDependency */,
+			);
+			name = "Pods-ProjectX";
+			productName = "Pods-ProjectX";
+			productReference = 8785F541BF23CF881283DFC7A2ACC629 /* Pods_ProjectX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D42467EB7A2FAA6D8FE6A47D414CB4DE /* Pods-ProjectXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E022FAD1C0740698DDE8FCBC40F89F04 /* Build configuration list for PBXNativeTarget "Pods-ProjectXTests" */;
+			buildPhases = (
+				5DA1E82D3C85BA37AC3395A949233D51 /* Headers */,
+				9E7CEFAD22F0315B7AE6B3791E22B5FB /* Sources */,
+				339F0767559CC9FE0544799FE4D3C95A /* Frameworks */,
+				A7BA6463CA904ECD46D55A8F6631766F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E2FA9405D2A9FE70F25AB752CEEF3F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-ProjectXTests";
+			productName = "Pods-ProjectXTests";
+			productReference = 4DF686E6C6F8B1BC2355D8A530B16FF0 /* Pods_ProjectXTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 32482BE7B8970A6ABDBFAE9FC3607A0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F54D367B6A114347B83E1577FC96D21 /* CryptoNewsApi */,
+				9B2205D036BD597D3AF159F7A74757CA /* Pods-ProjectX */,
+				05F83A67A91133CC878814C0AB781F05 /* Pods-ProjectX-ProjectXUITests */,
+				D42467EB7A2FAA6D8FE6A47D414CB4DE /* Pods-ProjectXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73FE923020ECA74DA4B3E6D5A01DD69A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BA6463CA904ECD46D55A8F6631766F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EBB6905A29230ED57A34DA8F808F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BDBB61A59E9C1ADD9B0FA73A032E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00432A5F7C3E71F06CE03430E67D92EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7305D1F631E2C24962AF43677B850BE /* Pods-ProjectX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1328CDBAE3E7A63A5B7937E681E6A503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C517A9409F486D74C8D258B8351A6705 /* Pods-ProjectX-ProjectXUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E7CEFAD22F0315B7AE6B3791E22B5FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF1FEFE17DF0669976A755982098207 /* Pods-ProjectXTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52B34DA20E6D0935FC3DE635F5FF685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE78A55D21C994B6F61DE22D2C554CE2 /* CCModels.swift in Sources */,
+				1B7399F6735EBB118B218D380B6A48CB /* CryptoControlApi.swift in Sources */,
+				D153C2E80A04410D5BAC3C7E48069CBF /* CryptoNewsApi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E2FA9405D2A9FE70F25AB752CEEF3F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ProjectX";
+			target = 9B2205D036BD597D3AF159F7A74757CA /* Pods-ProjectX */;
+			targetProxy = F94FD54B069DB3C3D444E49F780FFB19 /* PBXContainerItemProxy */;
+		};
+		9C3B829AF19EB36A888648AC79411AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoNewsApi;
+			target = 7F54D367B6A114347B83E1577FC96D21 /* CryptoNewsApi */;
+			targetProxy = 5CE1B28D5DAD7BAE7FFE2EB6255B6AFD /* PBXContainerItemProxy */;
+		};
+		BE080FBC648EA2A8B868664A168FDF30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoNewsApi;
+			target = 7F54D367B6A114347B83E1577FC96D21 /* CryptoNewsApi */;
+			targetProxy = 82417F5838FE04657B1266339D2597BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32BEA6F8AD6D2D6F172ADCF6B317C4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A37ECD67EA543C0EC6BE016FC77576 /* Pods-ProjectXTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProjectXTests/Pods-ProjectXTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProjectXTests/Pods-ProjectXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48F7D32D2B495E73E86523B76AA61B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0576BCA538A7C5EB37724AAB777BF3E8 /* Pods-ProjectX-ProjectXUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProjectX-ProjectXUITests/Pods-ProjectX-ProjectXUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProjectX-ProjectXUITests/Pods-ProjectX-ProjectXUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		646679318AF5BFC2E9D456B803F0A620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900D6F03ACF18C7402ADEFF6EB55D6C3 /* Pods-ProjectX-ProjectXUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProjectX-ProjectXUITests/Pods-ProjectX-ProjectXUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProjectX-ProjectXUITests/Pods-ProjectX-ProjectXUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F5E17C72B12116FBCE2991135ED51E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072B2CB0A609042BB1F9D1C338C9CFFD /* Pods-ProjectXTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProjectXTests/Pods-ProjectXTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProjectXTests/Pods-ProjectXTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9850AAFD07C93F76DB4A359A5FE2E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA9BFC660319FD4C42559E6576066A81 /* Pods-ProjectX.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProjectX/Pods-ProjectX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProjectX/Pods-ProjectX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2563A88372677C58E02A4B3CFE92C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA3B7986C9163CBD798561FC064C02C /* CryptoNewsApi.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoNewsApi/CryptoNewsApi-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoNewsApi/CryptoNewsApi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CryptoNewsApi/CryptoNewsApi.modulemap";
+				PRODUCT_MODULE_NAME = CryptoNewsApi;
+				PRODUCT_NAME = CryptoNewsApi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B520A9A319C6BE5EDADCDA6258993D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA3B7986C9163CBD798561FC064C02C /* CryptoNewsApi.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoNewsApi/CryptoNewsApi-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoNewsApi/CryptoNewsApi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CryptoNewsApi/CryptoNewsApi.modulemap";
+				PRODUCT_MODULE_NAME = CryptoNewsApi;
+				PRODUCT_NAME = CryptoNewsApi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8C5F530AC0EB8B92D2863A6A6B713A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548D9037EEDD729EB56300C7D482C30A /* Pods-ProjectX.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProjectX/Pods-ProjectX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProjectX/Pods-ProjectX.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FE95AA90F777E1F68603D4641617A1C /* Build configuration list for PBXNativeTarget "Pods-ProjectX-ProjectXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F7D32D2B495E73E86523B76AA61B46 /* Debug */,
+				646679318AF5BFC2E9D456B803F0A620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B593916E5ABF57413C64EACD2A839EC1 /* Build configuration list for PBXNativeTarget "CryptoNewsApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B520A9A319C6BE5EDADCDA6258993D10 /* Debug */,
+				A2563A88372677C58E02A4B3CFE92C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C486C38E16F91903DFA58670F6377C12 /* Build configuration list for PBXNativeTarget "Pods-ProjectX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9850AAFD07C93F76DB4A359A5FE2E0BD /* Debug */,
+				E8C5F530AC0EB8B92D2863A6A6B713A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E022FAD1C0740698DDE8FCBC40F89F04 /* Build configuration list for PBXNativeTarget "Pods-ProjectXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BEA6F8AD6D2D6F172ADCF6B317C4C7 /* Debug */,
+				6F5E17C72B12116FBCE2991135ED51E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

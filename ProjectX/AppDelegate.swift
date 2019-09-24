@@ -22,20 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-        
+
         if launchedBefore{
             window = UIWindow(frame: UIScreen.main.bounds)
-            
+
             let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
-            
+
             window?.rootViewController = controller
         } else{
             window = UIWindow(frame: UIScreen.main.bounds)
-            
+
             let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CustomPageViewController")
-            
+
             window?.rootViewController = controller
-            
+
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
         return true

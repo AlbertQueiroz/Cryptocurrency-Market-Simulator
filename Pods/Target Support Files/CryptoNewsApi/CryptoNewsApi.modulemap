@@ -1,0 +1,6 @@
+framework module CryptoNewsApi {
+  umbrella header "CryptoNewsApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
