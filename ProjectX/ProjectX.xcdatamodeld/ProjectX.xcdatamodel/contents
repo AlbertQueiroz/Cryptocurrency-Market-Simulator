@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ResourceData" representedClassName="ResourceData" syncable="YES" codeGenerationType="class">
+        <attribute name="baseInvestiment" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gainPercentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gainPriceUSD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="initialDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="market" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pastPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quantityBTC_past" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quantityBTC_today" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="SimulationData" representedClassName="SimulationData" syncable="YES" codeGenerationType="class">
+        <attribute name="criptomoeda" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataCompra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataVenda" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rendimento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saldoTotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="valorCompra" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ResourceData" positionX="-54" positionY="27" width="128" height="195"/>
+        <element name="SimulationData" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
 </model>

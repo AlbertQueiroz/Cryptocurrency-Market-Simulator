@@ -10,7 +10,6 @@
 		427F057B32385D82A53F9BD0 /* Pods_ProjectX_ProjectXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D687E249753DE2DD3FD73D23 /* Pods_ProjectX_ProjectXUITests.framework */; };
 		49647D60E525FC2B5AD8089A /* Pods_ProjectXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C750AFA6A335A5DAC48723 /* Pods_ProjectXTests.framework */; };
 		5713127823300C5100F0958E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5713127623300C5100F0958E /* Main.storyboard */; };
-		5713127B23300C5100F0958E /* ProjectX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5713127923300C5100F0958E /* ProjectX.xcdatamodeld */; };
 		5713128023300C5200F0958E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5713127E23300C5200F0958E /* LaunchScreen.storyboard */; };
 		5713128B23300C5200F0958E /* ProjectXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5713128A23300C5200F0958E /* ProjectXTests.swift */; };
 		5713129623300C5200F0958E /* ProjectXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5713129523300C5200F0958E /* ProjectXUITests.swift */; };
@@ -25,8 +24,14 @@
 		57760D532333EEFB00FA7291 /* firstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57760D482333EEFB00FA7291 /* firstScreen.swift */; };
 		57760D542333EEFB00FA7291 /* thirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57760D492333EEFB00FA7291 /* thirdScreen.swift */; };
 		57760D552333EEFB00FA7291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57760D4A2333EEFB00FA7291 /* AppDelegate.swift */; };
+		57A69D6F233D4E9500F9EE34 /* ProjectX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57A69D6D233D4E9500F9EE34 /* ProjectX.xcdatamodeld */; };
 		57FCDACD2339628600D7ABDA /* AddNewSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDACC2339628600D7ABDA /* AddNewSimulationViewController.swift */; };
 		57FCDACF233A92B700D7ABDA /* SimulationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDACE233A92B700D7ABDA /* SimulationDetailViewController.swift */; };
+		57FCDAD5233AAA0300D7ABDA /* Simulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDAD4233AAA0300D7ABDA /* Simulations.swift */; };
+		57FCDADC233AB95500D7ABDA /* SimulationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDADB233AB95500D7ABDA /* SimulationApi.swift */; };
+		57FCDAE0233AB98500D7ABDA /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDADF233AB98500D7ABDA /* Resource.swift */; };
+		57FCDAE2233C026900D7ABDA /* CotationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDAE1233C026900D7ABDA /* CotationsApi.swift */; };
+		57FCDAE4233D2F0400D7ABDA /* NewApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDAE3233D2F0400D7ABDA /* NewApi.swift */; };
 		9E332DFEAA288B04C3F40DD0 /* Pods_ProjectX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CE73AB43E11242AB60AD25 /* Pods_ProjectX.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +57,6 @@
 		19D7E850C8FAC4855BC276D3 /* Pods-ProjectX-ProjectXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectX-ProjectXUITests.release.xcconfig"; path = "Target Support Files/Pods-ProjectX-ProjectXUITests/Pods-ProjectX-ProjectXUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5713126F23300C5100F0958E /* ProjectX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5713127723300C5100F0958E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5713127A23300C5100F0958E /* ProjectX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectX.xcdatamodel; sourceTree = "<group>"; };
 		5713127F23300C5200F0958E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5713128123300C5200F0958E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5713128623300C5200F0958E /* ProjectXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,8 +76,14 @@
 		57760D482333EEFB00FA7291 /* firstScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstScreen.swift; sourceTree = "<group>"; };
 		57760D492333EEFB00FA7291 /* thirdScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdScreen.swift; sourceTree = "<group>"; };
 		57760D4A2333EEFB00FA7291 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57A69D6E233D4E9500F9EE34 /* ProjectX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectX.xcdatamodel; sourceTree = "<group>"; };
 		57FCDACC2339628600D7ABDA /* AddNewSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewSimulationViewController.swift; sourceTree = "<group>"; };
 		57FCDACE233A92B700D7ABDA /* SimulationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailViewController.swift; sourceTree = "<group>"; };
+		57FCDAD4233AAA0300D7ABDA /* Simulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulations.swift; sourceTree = "<group>"; };
+		57FCDADB233AB95500D7ABDA /* SimulationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationApi.swift; sourceTree = "<group>"; };
+		57FCDADF233AB98500D7ABDA /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		57FCDAE1233C026900D7ABDA /* CotationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CotationsApi.swift; sourceTree = "<group>"; };
+		57FCDAE3233D2F0400D7ABDA /* NewApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApi.swift; sourceTree = "<group>"; };
 		7524876684F87EDE0F707FAA /* Pods-ProjectXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectXTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectXTests/Pods-ProjectXTests.release.xcconfig"; sourceTree = "<group>"; };
 		973431A4C0973C8360529388 /* Pods-ProjectXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectXTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectXTests/Pods-ProjectXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		97605C1BCB2D2BFE4D17EB6D /* Pods-ProjectX-ProjectXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectX-ProjectXUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectX-ProjectXUITests/Pods-ProjectX-ProjectXUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,9 +169,14 @@
 				57FCDACC2339628600D7ABDA /* AddNewSimulationViewController.swift */,
 				57760D472333EEFB00FA7291 /* SimulatorViewController.swift */,
 				57FCDACE233A92B700D7ABDA /* SimulationDetailViewController.swift */,
+				57FCDADB233AB95500D7ABDA /* SimulationApi.swift */,
+				57FCDAE1233C026900D7ABDA /* CotationsApi.swift */,
+				57FCDAE3233D2F0400D7ABDA /* NewApi.swift */,
+				57FCDAD4233AAA0300D7ABDA /* Simulations.swift */,
+				57FCDADF233AB98500D7ABDA /* Resource.swift */,
+				57A69D6D233D4E9500F9EE34 /* ProjectX.xcdatamodeld */,
 				5713127E23300C5200F0958E /* LaunchScreen.storyboard */,
 				5713128123300C5200F0958E /* Info.plist */,
-				5713127923300C5100F0958E /* ProjectX.xcdatamodeld */,
 				57760D3E2330185900FA7291 /* AppColor.swift */,
 			);
 			path = ProjectX;
@@ -437,16 +452,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FCDADC233AB95500D7ABDA /* SimulationApi.swift in Sources */,
+				57FCDAE4233D2F0400D7ABDA /* NewApi.swift in Sources */,
+				57A69D6F233D4E9500F9EE34 /* ProjectX.xcdatamodeld in Sources */,
+				57FCDAE0233AB98500D7ABDA /* Resource.swift in Sources */,
 				57FCDACF233A92B700D7ABDA /* SimulationDetailViewController.swift in Sources */,
 				57760D552333EEFB00FA7291 /* AppDelegate.swift in Sources */,
 				57760D4C2333EEFB00FA7291 /* NoticiesViewController.swift in Sources */,
 				57760D512333EEFB00FA7291 /* secondScreen.swift in Sources */,
-				5713127B23300C5100F0958E /* ProjectX.xcdatamodeld in Sources */,
 				57760D532333EEFB00FA7291 /* firstScreen.swift in Sources */,
 				57760D4B2333EEFB00FA7291 /* fourthScreen.swift in Sources */,
 				57760D4D2333EEFB00FA7291 /* CustomPageViewController.swift in Sources */,
 				57760D3F2330185900FA7291 /* AppColor.swift in Sources */,
 				57760D522333EEFB00FA7291 /* SimulatorViewController.swift in Sources */,
+				57FCDAD5233AAA0300D7ABDA /* Simulations.swift in Sources */,
+				57FCDAE2233C026900D7ABDA /* CotationsApi.swift in Sources */,
 				57760D4E2333EEFB00FA7291 /* CotationsViewController.swift in Sources */,
 				57FCDACD2339628600D7ABDA /* AddNewSimulationViewController.swift in Sources */,
 				57760D542333EEFB00FA7291 /* thirdScreen.swift in Sources */,
@@ -786,12 +806,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5713127923300C5100F0958E /* ProjectX.xcdatamodeld */ = {
+		57A69D6D233D4E9500F9EE34 /* ProjectX.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5713127A23300C5100F0958E /* ProjectX.xcdatamodel */,
+				57A69D6E233D4E9500F9EE34 /* ProjectX.xcdatamodel */,
 			);
-			currentVersion = 5713127A23300C5100F0958E /* ProjectX.xcdatamodel */;
+			currentVersion = 57A69D6E233D4E9500F9EE34 /* ProjectX.xcdatamodel */;
 			path = ProjectX.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

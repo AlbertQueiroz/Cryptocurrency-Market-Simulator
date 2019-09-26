@@ -7,9 +7,36 @@
 //
 
 import UIKit
+import CoreData
 
-class AddNewSimulationViewController: UIViewController {
+class AddNewSimulationViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
 
+    var coins = [    "BTC",
+                     "ETH",
+                     "ETC",
+                     "LTC",
+                     "BCH",
+                     "XRP",
+                     "EOS",
+                     "BNB",
+                     "XLM",
+                     "XMR",
+                     "ADA",
+                     "TRX",
+                     "DASH",
+                     "ZEC",
+                     "DOGE",
+                     "NEO",
+                     "NANO",
+                     "IOTA"] 
+
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    
+    
  
     @IBOutlet var criptoativoLabel: UITextField!
     @IBOutlet var simularButton: UIButton!
@@ -18,18 +45,59 @@ class AddNewSimulationViewController: UIViewController {
     @IBOutlet var dataDaCompraLabel: UITextField!
     @IBOutlet weak var valorTextLabel: UITextField!
     
+    
+    
     @IBAction func cancelButton(_ sender: Any) {
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func Simular(_ sender: Any) {
-        let criptoativo = criptoativoLabel.text
-        let valorCompra = valorTextLabel.text
-        let dataCompra = dataDaCompraLabel.text
-        let dataVenda = dataDaVendaLabel.text
-        print(criptoativo,valorCompra,dataCompra,dataVenda)
+        if (criptoativoLabel.text == "" || valorTextLabel.text == "" || dataDaCompraLabel.text == "" || dataDaVendaLabel.text == "") {
+            showAlert()
+            return
+        }
+        
+        
+        
+        
+        
+        guard let criptoativo = criptoativoLabel.text else {return showAlert()}
+        guard let valorCompra = valorTextLabel.text else {return}
+        guard let dataCompra = dataDaCompraLabel.text else {return print("Deu ruim")}
+        guard let dataVenda = dataDaVendaLabel.text else {return print("Deu merda")}
+        
+        let entity = NSEntityDescription.entity(forEntityName: "SimulationData", in: self.context)!
+        
+        let simulationInputData = NSManagedObject(entity: entity, insertInto: context)
+        
+        
+        simulationInputData.setValue(criptoativo, forKey: "criptomoeda")
+        simulationInputData.setValue(valorCompra, forKey: "valorCompra")
+        simulationInputData.setValue(dataCompra, forKey: "dataCompra")
+        simulationInputData.setValue(dataVenda, forKey: "dataVenda")
+        
+       
+        SimulationApi.getSimulationData(withCoin: criptoativo, withValue: valorCompra, withDataBuy: dataCompra, withDataSell: dataVenda) { (resource) in
+            if let resourceNotNil = resource {
+                //MARK: TODO Salvar SimulationData no CoreData
+                print(resource)
+            }
+        }
+        
+        
+        do{
+            try self.context.save()
+        } catch{
+            print("Saving Data ERROR")
+        }
+        
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
+    
+    
+    
+    
+    
     
     
     override func viewDidLoad() {
@@ -46,8 +114,50 @@ class AddNewSimulationViewController: UIViewController {
         simularButton.layer.cornerRadius = 24
         
         hideKeyboardWhenTappedAround()
+        
+        let criptoPicker = UIPickerView()
+        criptoPicker.delegate = self
+        criptoativoLabel.inputView = criptoPicker
+        
     }
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return coins.count
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return coins[row]
+    }
+    
+    func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        criptoativoLabel.text = coins[row]
+    }
+    
+    
+    
+    
+    
+    
+    fileprivate func showAlert() {
+        let alert = UIAlertController(title: "Voce não setou um campo", message: "Por favor sete um campo", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (alert) in
+            print("Ok")
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
 }
+
+
+
+
+
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
@@ -59,4 +169,5 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }

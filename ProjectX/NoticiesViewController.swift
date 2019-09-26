@@ -7,18 +7,19 @@
 //
 
 import UIKit
-import CryptoNewsApi
 
-class NoticiesViewController: UIViewController{
+class NoticiesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-
+//    var webView:WKWebView!
+    
     @IBOutlet var tableView: UITableView!
     
-    var articles: [CCArticle] = [] {
+    var articles: [LatestNewsResource] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
+            
         }
     }
 
@@ -29,48 +30,31 @@ class NoticiesViewController: UIViewController{
         tableView.dataSource = self
         // Do any additional setup after loading the view.
         
-        let api = CryptoControlApi(apiKey: "b8d3767b03073fb38780eb1de50198ea")
-        
-        api.getTopNews { (error, articles) in
-            if (error == CCErrors.invalidAPIKey) {
-                print("bad api key")
-                }
-            
-            if let art = articles {
-                self.articles = art
-                }
-            }
-        
-            api.getTopNewsByCategory { (error, categories) in
-                print(categories?.analysis.count)
+//        let url = URL(string :"https://www.google.com")!
+//        webView.load(URLRequest(url:url))
+//
+        NewApi.downloadNewsData{(latestNewsResources) in
+            guard let latestNewsResource = latestNewsResources else{ return }
+            self.articles = latestNewsResources!
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
         }
+        
     }
+    
+//    override func loadView() {
+//        webView = WKWebView()
+//        webView.navigationDelegate = self
+//        view = webView
+//    }
+//
+//    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+//        title = web
+//    }
+}
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = "Alta no BitCoin"
-        
-        cell.textLabel?.textColor = .actionColor
-        
-        cell.detailTextLabel?.text = "De acordo com estatisticas bitcoin subiu 2%"
-        cell.detailTextLabel?.textColor = .actionColor
-        
-        cell.backgroundColor = .primaryColor
-        
-        
-        let image = UIImage(named: "folded-newspaper")
-        
-        if let imageView = cell.imageView {
-            imageView.image = image
-        }
-        return cell
-    }
-
-
-
-extension NoticiesViewController: UITableViewDelegate, UITableViewDataSource {
+extension NoticiesViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
@@ -90,7 +74,33 @@ extension NoticiesViewController: UITableViewDelegate, UITableViewDataSource {
         cell.detailTextLabel?.textColor = .gray
         cell.detailTextLabel?.text = articles[indexPath.row].description
         
-        return cell
+//        if
+//            let urlString = articles[indexPath.row].image_article,
+//            let imageURL = URL(string: urlString) {
+//
+//            let task = URLSession.shared.dataTask(with: imageURL) {
+//                (data,response,error) in
+//
+//                if error == nil{
+//                    let loadedImage = UIImage(data: data!)
+//
+//                    DispatchQueue.main.async {
+//                        if let imageView = cell.imageView {
+//                            imageView.image = loadedImage
+//                            cell.layoutSubviews()
+//                        }
+//                    }
+//
+//                }
+//            }
+//            task.resume()
+//
+//        } else {
         
+            cell.imageView?.image = UIImage(named: "folded-newspaper")
+        
+//        }
+        
+        return cell
     }
 }

@@ -309,10 +309,9 @@ o mercado</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3W8-PO-aXc">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Total: R$ 35250.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rKa-5H-CYe">
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Total: R$ 0,00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rKa-5H-CYe">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.98028594255447388" green="0.98045331239700317" blue="0.98027533292770386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                     <color key="textColor" red="0.32014113659999999" green="0.31782293319999999" blue="0.60003715749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -340,7 +339,9 @@ o mercado</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.97830742390000003" green="0.97830742390000003" blue="0.97830742390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="P8p-Mb-B7H" kind="push" id="hkN-uw-aet"/>
                                         </connections>
@@ -362,9 +363,7 @@ o mercado</string>
                     <navigationItem key="navigationItem" title="Simulações" id="vll-Xw-exY">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hJp-wA-b0d">
                             <connections>
-                                <segue destination="wbr-gI-LCq" kind="popoverPresentation" popoverAnchorBarButtonItem="hJp-wA-b0d" id="ht4-FI-8bx">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="wbr-gI-LCq" kind="showDetail" id="ht4-FI-8bx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -385,7 +384,7 @@ o mercado</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkZ-h8-2aT">
-                                <rect key="frame" x="107" y="653.5" width="200" height="64"/>
+                                <rect key="frame" x="107" y="718" width="200" height="64"/>
                                 <color key="backgroundColor" red="0.32014113659999999" green="0.31782293319999999" blue="0.60003715749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="VLu-q0-HaD"/>
@@ -486,11 +485,11 @@ o mercado</string>
                             <constraint firstItem="hGn-0d-59Y" firstAttribute="centerX" secondItem="uVO-9B-JKZ" secondAttribute="centerX" id="0Sw-Gq-h4v"/>
                             <constraint firstItem="iEL-Eo-cVX" firstAttribute="centerX" secondItem="uVO-9B-JKZ" secondAttribute="centerX" id="1RJ-0W-VrP"/>
                             <constraint firstItem="MkZ-h8-2aT" firstAttribute="centerX" secondItem="uVO-9B-JKZ" secondAttribute="centerX" id="5TB-Kj-R9y"/>
+                            <constraint firstItem="Vts-Ip-iy4" firstAttribute="bottom" secondItem="MkZ-h8-2aT" secondAttribute="bottom" constant="80" id="6W1-KR-VDS"/>
                             <constraint firstItem="hag-io-mjD" firstAttribute="centerX" secondItem="uVO-9B-JKZ" secondAttribute="centerX" id="6pC-Do-E84"/>
                             <constraint firstItem="QVW-do-1Gl" firstAttribute="leading" secondItem="Vts-Ip-iy4" secondAttribute="leading" constant="64" id="9Qt-9C-tEK"/>
                             <constraint firstItem="1JT-v5-jTh" firstAttribute="top" secondItem="AqG-rO-Hd6" secondAttribute="bottom" constant="8" id="Fs3-SE-JCO"/>
                             <constraint firstItem="AqG-rO-Hd6" firstAttribute="leading" secondItem="Vts-Ip-iy4" secondAttribute="leading" constant="64" id="FuN-MA-tOm"/>
-                            <constraint firstItem="MkZ-h8-2aT" firstAttribute="top" secondItem="1JT-v5-jTh" secondAttribute="bottom" constant="80" id="H4h-in-FKg"/>
                             <constraint firstItem="Y1p-Vu-jgr" firstAttribute="top" secondItem="Vts-Ip-iy4" secondAttribute="top" id="HuU-GS-9jj"/>
                             <constraint firstItem="3uW-OK-JSV" firstAttribute="leading" secondItem="Vts-Ip-iy4" secondAttribute="leading" constant="64" id="JVt-fY-Qcg"/>
                             <constraint firstItem="hGn-0d-59Y" firstAttribute="top" secondItem="QVW-do-1Gl" secondAttribute="bottom" constant="8" id="Nn0-6D-qIX"/>
@@ -546,7 +545,7 @@ o mercado</string>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GQX-zD-BP2">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <color key="backgroundColor" red="0.92501109838485718" green="0.93699079751968384" blue="0.95767825841903687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Ezp-eW-d8G" detailTextLabel="L61-lm-GHR" style="IBUITableViewCellStyleSubtitle" id="ieM-SL-BqI">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
