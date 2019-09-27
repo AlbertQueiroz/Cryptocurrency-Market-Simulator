@@ -59,7 +59,7 @@ extension CotationsViewController{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-    let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+    let cell = CustomTableViewCell2(style: .subtitle, reuseIdentifier: nil)
 
         cell.textLabel?.text = cotations[indexPath.row].name
         cell.textLabel?.textColor = .actionColor
@@ -67,22 +67,45 @@ extension CotationsViewController{
         cell.detailTextLabel?.textColor = .gray
         cell.detailTextLabel?.text = String(format: "R$ %.2f", cotations[indexPath.row].price)
         
-//        let imageURL = cotations[indexPath.row].logo
-//
-//        let task = URLSession.shared.dataTask(with: imageURL){(data,response,error) in
-//            if error == nil{
-//                let loadedImage = UIImage(data: data!)
-//
-//                DispatchQueue.main.async {
-//                    if let imageView = cell.imageView {
-//                        imageView.image = loadedImage
-//                    }
-//                }
-//            }
-//        }
-//        task.resume()
-        cell.imageView?.image = UIImage(named: "Grupo 61")
+        let imageURL = cotations[indexPath.row].logo
+
+        let task = URLSession.shared.dataTask(with: imageURL){(data,response,error) in
+            if error == nil{
+                let loadedImage = UIImage(data: data!)
+
+                DispatchQueue.main.async {
+                    if let imageView = cell.imageView {
+                        imageView.image = loadedImage
+                    }
+                }
+            }
+        }
+        task.resume()
+//        cell.imageView?.image = UIImage(named: "Grupo 61")
         
         return cell
+    }
+}
+
+class CustomTableViewCell2: UITableViewCell {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
+    // Here you can customize the appearance of your cell
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        // Customize imageView like you need
+        self.isUserInteractionEnabled = false
+        self.imageView?.frame = CGRect(x: 10,y: 10,width: 40,height: 40)
+        self.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        // Costomize other elements
+                self.textLabel?.frame = CGRect(x: 60, y: 10, width: self.frame.width - 45, height: 20)
+                self.detailTextLabel?.frame = CGRect(x: 60, y: 35, width: self.frame.width - 45, height: 15)
     }
 }

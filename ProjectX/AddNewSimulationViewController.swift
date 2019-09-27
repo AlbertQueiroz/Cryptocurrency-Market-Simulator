@@ -82,7 +82,7 @@ class AddNewSimulationViewController: UIViewController, UIPickerViewDelegate, UI
                 
                 let resourceData = self.coreDao.new()
                 resourceData.market = resourceNotNil.market
-                resourceData.profit_percentage = resourceNotNil.profit_percentage 
+                resourceData.profit_percentage = resourceNotNil.profit_percentage
                 resourceData.profit_fiat_price = resourceNotNil.profit_fiat_price
                 resourceData.base_investiment_fiat = resourceNotNil.base_investiment_fiat
                 resourceData.sell_date = String(resourceNotNil.sell_date)

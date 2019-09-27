@@ -12,6 +12,7 @@ import CoreData
 class SimulatorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     var simulations = [SimulationData]()
+    var resources = [ResourceData]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
  
@@ -40,6 +41,12 @@ class SimulatorViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewWillAppear(animated)
         loadData()
         tableView.reloadData()
+        if self.simulations.isEmpty{
+            tableView.isHidden = true
+        } else{
+            tableView.isHidden = false
+        }
+        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,8 +63,7 @@ class SimulatorViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.textLabel?.text = simulations[indexPath.row].value(forKey: "criptomoeda") as! String
         
         cell.textLabel?.textColor = .actionColor
-        
-//        cell.detailTextLabel?.text = "Rendeu R$ 300,00 até 20/10/2018"
+
         cell.detailTextLabel?.textColor = .actionColor
         
         cell.backgroundColor = .primaryColor
@@ -79,10 +85,15 @@ class SimulatorViewController: UIViewController, UITableViewDelegate, UITableVie
         if (editingStyle == .delete) {
             
             let obj = self.simulations[indexPath.row] as! NSManagedObject
+//            let resourceObj = self.resources[indexPath.row] as NSManagedObject
             
             self.simulations.remove(at: indexPath.row)
             
+//            self.resources.remove(at: indexPath.row)
+//
+            
             self.context.delete(obj)
+//            self.context.delete(resourceObj)
             do{
                 try self.context.save()
             } catch{
