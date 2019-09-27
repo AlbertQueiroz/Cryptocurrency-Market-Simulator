@@ -115,10 +115,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regressiveTutorial" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-pQ-JaP">
-                                <rect key="frame" x="199" y="339" width="16" height="16"/>
+                                <rect key="frame" x="80.5" y="339" width="253.00000000000006" height="147.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto seu dinheiro poderia ter rendido" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apf-we-ard">
-                                <rect key="frame" x="111.5" y="439" width="191" height="79"/>
+                                <rect key="frame" x="111.5" y="570.5" width="191" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.28864306210000001" green="0.28566724059999998" blue="0.58055704829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -309,16 +309,9 @@ o mercado</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3W8-PO-aXc">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Total: R$ 0,00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rKa-5H-CYe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                    <color key="textColor" red="0.32014113659999999" green="0.31782293319999999" blue="0.60003715749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="vGP-OZ-Uhl" detailTextLabel="9iF-xO-bLq" style="IBUITableViewCellStyleSubtitle" id="Puj-LY-5x5">
-                                        <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Puj-LY-5x5" id="kUO-X8-EGI">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
@@ -342,9 +335,6 @@ o mercado</string>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.97830742390000003" green="0.97830742390000003" blue="0.97830742390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="P8p-Mb-B7H" kind="push" id="hkN-uw-aet"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -369,6 +359,7 @@ o mercado</string>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3W8-PO-aXc" id="lk6-x7-BxW"/>
+                        <segue destination="P8p-Mb-B7H" kind="show" identifier="detailSimulationSegue" id="xnQ-DT-PDs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RD-S7-FW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -526,14 +517,32 @@ o mercado</string>
                     <view key="view" contentMode="scaleToFill" id="pwO-qR-S7u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Sg-mG-Zca">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aJf-q6-b6p" firstAttribute="bottom" secondItem="3Sg-mG-Zca" secondAttribute="bottom" id="59X-dO-U0S"/>
+                            <constraint firstItem="aJf-q6-b6p" firstAttribute="trailing" secondItem="3Sg-mG-Zca" secondAttribute="trailing" id="Fvg-TT-wDR"/>
+                            <constraint firstItem="3Sg-mG-Zca" firstAttribute="leading" secondItem="aJf-q6-b6p" secondAttribute="leading" id="gzc-WH-SlW"/>
+                            <constraint firstItem="3Sg-mG-Zca" firstAttribute="top" secondItem="aJf-q6-b6p" secondAttribute="top" id="yT3-VJ-Hw2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aJf-q6-b6p"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detalhes" largeTitleDisplayMode="never" id="LuC-kE-3Az"/>
+                    <navigationItem key="navigationItem" title="Detalhes" largeTitleDisplayMode="always" id="LuC-kE-3Az"/>
+                    <connections>
+                        <outlet property="textView" destination="3Sg-mG-Zca" id="bbk-ds-AM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcZ-ZZ-5zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5826" y="427"/>
+            <point key="canvasLocation" x="5824.6376811594209" y="426.5625"/>
         </scene>
         <!--Cotação-->
         <scene sceneID="F3v-4D-Klm">

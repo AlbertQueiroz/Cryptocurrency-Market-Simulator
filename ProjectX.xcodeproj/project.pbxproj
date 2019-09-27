@@ -25,6 +25,9 @@
 		57760D542333EEFB00FA7291 /* thirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57760D492333EEFB00FA7291 /* thirdScreen.swift */; };
 		57760D552333EEFB00FA7291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57760D4A2333EEFB00FA7291 /* AppDelegate.swift */; };
 		57A69D6F233D4E9500F9EE34 /* ProjectX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57A69D6D233D4E9500F9EE34 /* ProjectX.xcdatamodeld */; };
+		57A69D75233D58FE00F9EE34 /* ConfigurableDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A69D74233D58FE00F9EE34 /* ConfigurableDao.swift */; };
+		57A69D77233D591500F9EE34 /* CoreDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A69D76233D591500F9EE34 /* CoreDao.swift */; };
+		57A69D79233D593200F9EE34 /* CoreStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A69D78233D593200F9EE34 /* CoreStack.swift */; };
 		57FCDACD2339628600D7ABDA /* AddNewSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDACC2339628600D7ABDA /* AddNewSimulationViewController.swift */; };
 		57FCDACF233A92B700D7ABDA /* SimulationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDACE233A92B700D7ABDA /* SimulationDetailViewController.swift */; };
 		57FCDAD5233AAA0300D7ABDA /* Simulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCDAD4233AAA0300D7ABDA /* Simulations.swift */; };
@@ -77,6 +80,9 @@
 		57760D492333EEFB00FA7291 /* thirdScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdScreen.swift; sourceTree = "<group>"; };
 		57760D4A2333EEFB00FA7291 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57A69D6E233D4E9500F9EE34 /* ProjectX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectX.xcdatamodel; sourceTree = "<group>"; };
+		57A69D74233D58FE00F9EE34 /* ConfigurableDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableDao.swift; sourceTree = "<group>"; };
+		57A69D76233D591500F9EE34 /* CoreDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDao.swift; sourceTree = "<group>"; };
+		57A69D78233D593200F9EE34 /* CoreStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreStack.swift; sourceTree = "<group>"; };
 		57FCDACC2339628600D7ABDA /* AddNewSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewSimulationViewController.swift; sourceTree = "<group>"; };
 		57FCDACE233A92B700D7ABDA /* SimulationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailViewController.swift; sourceTree = "<group>"; };
 		57FCDAD4233AAA0300D7ABDA /* Simulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulations.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		5713127123300C5100F0958E /* ProjectX */ = {
 			isa = PBXGroup;
 			children = (
+				57A69D73233D58C200F9EE34 /* CoreDao */,
 				57760D4A2333EEFB00FA7291 /* AppDelegate.swift */,
 				5713127623300C5100F0958E /* Main.storyboard */,
 				57760D452333EEFA00FA7291 /* Assets.xcassets */,
@@ -198,6 +205,16 @@
 				5713129723300C5200F0958E /* Info.plist */,
 			);
 			path = ProjectXUITests;
+			sourceTree = "<group>";
+		};
+		57A69D73233D58C200F9EE34 /* CoreDao */ = {
+			isa = PBXGroup;
+			children = (
+				57A69D74233D58FE00F9EE34 /* ConfigurableDao.swift */,
+				57A69D76233D591500F9EE34 /* CoreDao.swift */,
+				57A69D78233D593200F9EE34 /* CoreStack.swift */,
+			);
+			path = CoreDao;
 			sourceTree = "<group>";
 		};
 		B0D6C29B6CF237C2444565DB /* Pods */ = {
@@ -461,15 +478,18 @@
 				57760D4C2333EEFB00FA7291 /* NoticiesViewController.swift in Sources */,
 				57760D512333EEFB00FA7291 /* secondScreen.swift in Sources */,
 				57760D532333EEFB00FA7291 /* firstScreen.swift in Sources */,
+				57A69D77233D591500F9EE34 /* CoreDao.swift in Sources */,
 				57760D4B2333EEFB00FA7291 /* fourthScreen.swift in Sources */,
 				57760D4D2333EEFB00FA7291 /* CustomPageViewController.swift in Sources */,
 				57760D3F2330185900FA7291 /* AppColor.swift in Sources */,
+				57A69D75233D58FE00F9EE34 /* ConfigurableDao.swift in Sources */,
 				57760D522333EEFB00FA7291 /* SimulatorViewController.swift in Sources */,
 				57FCDAD5233AAA0300D7ABDA /* Simulations.swift in Sources */,
 				57FCDAE2233C026900D7ABDA /* CotationsApi.swift in Sources */,
 				57760D4E2333EEFB00FA7291 /* CotationsViewController.swift in Sources */,
 				57FCDACD2339628600D7ABDA /* AddNewSimulationViewController.swift in Sources */,
 				57760D542333EEFB00FA7291 /* thirdScreen.swift in Sources */,
+				57A69D79233D593200F9EE34 /* CoreStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

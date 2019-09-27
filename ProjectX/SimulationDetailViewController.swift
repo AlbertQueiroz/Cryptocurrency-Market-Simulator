@@ -10,7 +10,16 @@ import UIKit
 
 class SimulationDetailViewController: UIViewController {
 
-    var resource: Resource? {
+    @IBOutlet var textView: UITextView!
+    
+    
+    let coreDao = CoreDao<ResourceData>(with: "ProjectX")
+    
+    var resources: [ResourceData]?
+    
+    var detailIndex: Int?
+    
+    var resource: ResourceData? {
         didSet {
             DispatchQueue.main.async {
                 self.reloadViews()
@@ -21,10 +30,10 @@ class SimulationDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        ApiManager.downloadSimulationData { (simulationData) in
-//            guard let simulationData = simulationData else { return }
-//            self.resource = simulationData
-//        }
+        resources = coreDao.fetchAll()
+        
+        guard let resources = resources, let index = detailIndex else { return }
+        resource = resources[index]
         
     }
     
@@ -35,20 +44,12 @@ class SimulationDetailViewController: UIViewController {
             return
         }
         
-        //atualiza views acesando resource
+        textView.text = """
+        Market: \(resource.market!)
+        Market: \(resource.market!)
+        Market: \(resource.market!)
+        Market: \(resource.market!)
+        """
         
-        //            self.navigationItem.title = "raji"
-        //            self.totalLabel.text = "total: \(NSString(format: "%.2f",resource.total) as String)"
-        //            self.marketLabel.text = "market: \(resource.market)"
-        //            self.initialDateLabel.text = "initialDate: \(resource.initialDate)"
-        //            self.gainPercentageLabel.text = "gainPercentage: \(NSString(format: "%.2f",resource.gainPercentage) as String)"
-        //            self.baseInvestimentLabel.text = "baseInvestiment: \(NSString(format: "%.2f",resource.baseInvestiment) as String)"
-        //            self.currentPriceLabel.text = "currentPrice: \(NSString(format: "%.2f",resource.currentPrice) as String)"
-        //            self.gainPriceLabel.text = "gainPriceUSD: \(NSString(format: "%.2f",resource.gainPriceUSD) as String)"
-        //            self.totalLabel.text = "total: \(NSString(format: "%.2f",resource.total) as String)"
-        //            self.pastPriceLabel.text = "pastPrice: \(NSString(format: "%.2f",resource.pastPrice) as String)"
-        //            self.quantityBTCPastLabel.text = "quantityBTCPastLabel: \(NSString(format: "%.2f",resource.quantityBTC_past) as String)"
-        //            self.quantityBTCTodayLabel.text = "quantityBTCTodayLabel: \(NSString(format: "%.2f",resource.quantityBTC_today) as String)"
-        //
     }
 }

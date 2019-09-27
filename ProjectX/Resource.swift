@@ -9,16 +9,18 @@
 import Foundation
 
 struct Resource: Codable {
+    let asset_conversion: String
+    let base_investiment_cripto:Double
+    let base_investiment_fiat: Double
+    let buy_date: String
+    let buy_price: Double
+    let fiat_total: Double
     let market: String
-    let initialDate: String
-    let pastPrice: Double
-    let currentPrice: Double
-    let baseInvestiment: Int
-    let gainPercentage: Double
-    let quantityBTC_past: Double
-    let quantityBTC_today: Double
-    let gainPriceUSD: Double
-    let total: Double
+    let profit_fiat_price: Double
+    let profit_percentage: Double
+    let quantity_cripto_if_buy_today: Double
+    let sell_date: String
+    let sell_price: Double
 }
 
 

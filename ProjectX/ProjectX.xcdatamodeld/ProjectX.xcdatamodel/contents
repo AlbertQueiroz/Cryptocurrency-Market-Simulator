@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ResourceData" representedClassName="ResourceData" syncable="YES" codeGenerationType="class">
-        <attribute name="baseInvestiment" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="currentPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="gainPercentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="gainPriceUSD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="initialDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="asset_conversion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="base_investiment_cripto" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="base_investiment_fiat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="buy_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="buy_price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fiat_total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="market" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="pastPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="quantityBTC_past" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="quantityBTC_today" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="profit_fiat_price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="profit_percentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quantity_cripto_if_buy_today" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sell_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sell_price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="SimulationData" representedClassName="SimulationData" syncable="YES" codeGenerationType="class">
         <attribute name="criptomoeda" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,7 +23,7 @@
         <attribute name="valorCompra" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ResourceData" positionX="-54" positionY="27" width="128" height="195"/>
+        <element name="ResourceData" positionX="-54" positionY="27" width="128" height="225"/>
         <element name="SimulationData" positionX="-63" positionY="-18" width="128" height="135"/>
     </elements>
 </model>

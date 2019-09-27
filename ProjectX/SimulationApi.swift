@@ -68,6 +68,7 @@ struct SimulationApi {
                     
                 } catch {
                     print("💣 Erro no decode: "+error.localizedDescription)
+                    print(error)
                     print("\(String(data: data, encoding: .utf8)!)")
                     completion(nil)
                 }

@@ -14,6 +14,9 @@ class SimulatorViewController: UIViewController, UITableViewDelegate, UITableVie
     var simulations = [SimulationData]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+ 
+    
+    
     @IBOutlet var tableView: UITableView!
     
     func loadData(){
@@ -89,6 +92,17 @@ class SimulatorViewController: UIViewController, UITableViewDelegate, UITableVie
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .middle)
             tableView.endUpdates()
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detailSimulationSegue", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destiny = segue.destination as? SimulationDetailViewController, segue.identifier == "detailSimulationSegue", let index = sender as? Int {
+            destiny.detailIndex = index
         }
     }
 
